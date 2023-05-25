@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title%} Liste des taches{% endblock %}
+{% block body %}
+ <div class='container'>
+ <h1> mes taches</>
+{% for tache in taches %}
+ <tr>
+ <td>{{ tache.titre}}</td>
+ <td>{{ tache.description }}</td>
+  <td>{{ tache.statut }}</td>
+  <td>{{ tache.datelimite }}</td>
+
+
+</td>
+ </tr>
+ {% endfor %}
+  </div>
+
+ 
+{% endblock %}
